@@ -10,6 +10,53 @@ What already exists for detecting AI-generated or manipulated content, and where
 
 Audio deepfake detection is **not an empty field**. Researchers already benchmark spoofed-speech detectors, and some AI providers watermark audio they generate. The opportunity for DEUZ is the product layer: fast consumer access, combined detection signals, suspicious-timestamp evidence, and a clear action that stops an urgent scam.
 
+## What These Tools Actually Are
+
+### Google SynthID
+
+Google puts an invisible marker, called a watermark, inside some content created by its AI systems. If DEUZ finds that marker in supported audio, it is evidence that a participating AI system created or edited the recording.
+
+If DEUZ finds no SynthID watermark, that does **not** prove the audio is genuine. The audio may have come from a different AI tool, or it may not have been watermarked.
+
+### Pangram
+
+Pangram is mainly an AI-writing detector. It studies patterns in text and estimates whether the writing looks human-written or AI-generated. It is not currently a general voice-memo detector.
+
+Pangram is relevant as a product example because it gives an overall result and can highlight suspicious sections. DEUZ could use a similar presentation for suspicious moments in audio.
+
+### Claude Watermarking
+
+Claude watermarking places a statistical pattern in text produced by Claude. A detector with the correct key can check for that pattern. This concerns text, not general voice-clone or audio-splice detection.
+
+It is useful to DEUZ as an example of provider-side marking: the company generating AI content helps identify it later.
+
+### C2PA Content Credentials
+
+C2PA is like a signed history card attached to a media file. It can record where the file came from and whether supported tools changed it.
+
+A valid credential can provide useful evidence. A missing credential does not mean the file is fraudulent because many recordings never had one, and metadata can be removed.
+
+### ASVspoof
+
+ASVspoof is a research challenge for systems that detect fake speech, cloned voices, replayed recordings, and attacks against speaker verification. It shows that audio deepfake detection is already an active research field.
+
+Its datasets and testing methods could help DEUZ measure performance, but laboratory scores may not survive phone speakers, messaging-app compression, background noise, or microphone recording.
+
+### NIST Audio Deepfake Challenge
+
+NIST runs evaluations where teams test systems that generate and detect audio deepfakes. It provides another serious benchmark for the technology.
+
+A strong competition result does not automatically create a safe consumer product. DEUZ still needs fast processing, understandable warnings, privacy protection, and useful next steps.
+
+### The Simple Difference
+
+- **SynthID** checks for a marker placed into supported AI content.
+- **Pangram** estimates whether text resembles AI writing.
+- **Claude watermarking** marks Claude-generated text.
+- **C2PA** checks a signed record of a file’s origin and edits.
+- **ASVspoof and NIST** test systems that analyse audio for deepfakes and replay attacks.
+- **DEUZ** would combine relevant audio evidence with splice detection, scam-language analysis, and immediate safety actions.
+
 ## Comparison
 
 | Project or standard | Main approach | Relevant to DEUZ | Important limitation |
