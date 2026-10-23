@@ -24,6 +24,10 @@ DEUZ should provide risk evidence and verification actions—not claim that audi
 ## Documentation
 
 - [DEUZ concept analysis](DEUZ-concept-analysis.md)
+- [System architecture](ARCHITECTURE.md)
+- [Threat model](THREAT-MODEL.md)
+- [User flow](USER-FLOW.md)
+- [MVP plan](MVP-PLAN.md)
 
 ## Status
 
