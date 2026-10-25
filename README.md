@@ -28,6 +28,7 @@ DEUZ should provide risk evidence and verification actions—not claim that audi
 - [Threat model](THREAT-MODEL.md)
 - [User flow](USER-FLOW.md)
 - [MVP plan](MVP-PLAN.md)
+- [Research and existing tools](RESEARCH.md)
 
 ## Status
 
